@@ -3,8 +3,8 @@ import streamlit as st
 import requests
 
 st.header('Book Recommender System')
-books = pickle.load(open('model/book_list2.pkl','rb'))
-similarity = pickle.load(open('model/similarity2.pkl','rb'))
+books = pickle.load(open('book_list2.pkl','rb'))
+similarity = pickle.load(open('similarity2.pkl','rb'))
 
 book_list = books['title'].values
 
